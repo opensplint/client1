@@ -20,11 +20,12 @@ class Users extends Component {
     return (
       <div>
         <h2>Users</h2>
-        <ol>
+        <ul>
+          {/*object properties are case sensitive, id1 and ID1 are different*/}
           {this.state.users.map(user =>
-            <li key={user.id}>{user.name}</li>
+            <li key={user.ID1}>{user.Name1}</li>
           )}
-        </ol>
+        </ul>
       </div>
     );
   }
